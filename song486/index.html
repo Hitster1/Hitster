@@ -1,27 +1,18 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he">
 <head>
     <meta charset="UTF-8">
-    <title>Hitster Song</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song</title>
     <style>
-        body { display: flex; justify-content: center; align-items: center; height: 100vh; background: #f0f0f0; margin: 0; flex-direction: column; }
-        audio { width: 80%; margin-top: 20px; }
-        button {
-            font-size: 48px;
-            padding: 30px 60px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 15px;
-            cursor: pointer;
-        }
+        body { background-color: black; margin: 0; display: flex; align-items: center; justify-content: center; height: 100vh; flex-direction: column; }
+        audio::-webkit-media-controls-panel { background-color: black; }
+        audio { width: 80vw; height: 70px; }
     </style>
 </head>
 <body>
-    <button onclick="document.getElementById('player').play()">▶️</button>
-    <audio id="player" controls>
-        <source src="song.mp3" type="audio/mpeg">
+    <audio controls preload="auto">
+        <source src="אדם צובר זכרונות.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 </body>

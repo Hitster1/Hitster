@@ -1,31 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="he">
 <head>
     <meta charset="UTF-8">
-    <title>Music</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song</title>
     <style>
-        body {
-            background-color: black;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        audio {
-            width: 80%;
-        }
-        ::-webkit-media-controls-play-button {
-            transform: scale(3);
-            margin-top: 20vh;
-        }
+        body { background-color: black; margin: 0; display: flex; align-items: center; justify-content: center; height: 100vh; flex-direction: column; }
+        audio::-webkit-media-controls-panel { background-color: black; }
+        audio { width: 80vw; height: 70px; }
     </style>
 </head>
 <body>
     <audio controls preload="auto">
-        <source src="דודה - אלף כבאים 4.mp3" type="audio/mpeg">
+        <source src="אלף כבאים.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 </body>
