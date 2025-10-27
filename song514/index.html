@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song</title>
+    <style>
+        body { background-color: black; margin: 0; display: flex; align-items: center; justify-content: center; height: 100vh; flex-direction: column; }
+        audio::-webkit-media-controls-panel { background-color: black; }
+        audio { width: 80vw; height: 70px; }
+        .controls { margin-top: 20px; display: flex; gap: 20px; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <audio id="audioPlayer" controls preload="auto">
+        <source src="ירדנה ארזי עוד נגיע.mp3" type="audio/mpeg">
+        הדפדפן שלך לא תומך בנגן.
+    </audio>
+    <div class="controls">
+        <button onclick="skip(-10)">⏪ חזור 10 שניות</button>
+        <button onclick="skip(10)">⏩ קדימה 10 שניות</button>
+    </div>
+    <script>
+        function skip(seconds) {
+            const player = document.getElementById('audioPlayer');
+            player.currentTime += seconds;
+        }
+    </script>
+</body>
+</html>
