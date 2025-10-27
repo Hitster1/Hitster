@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="he">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  button {
+    font-size: 40px;
+    padding: 20px 40px;
+    cursor: pointer;
+  }
+  audio {
+    margin-top: 40px;
+    width: 90%;
+  }
+</style>
+</head>
+<body>
+  <button onclick="document.getElementById('player').play()">▶️ נגן</button>
+  <audio id="player" controls>
+    <source src="אריאל זילבר - בחברה להגנת הטבע.mp3" type="audio/mpeg">
+    הדפדפן שלך לא תומך בנגן אודיו.
+  </audio>
+</body>
+</html>
